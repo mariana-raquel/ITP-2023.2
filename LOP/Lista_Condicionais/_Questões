@@ -1,0 +1,24 @@
+1. O maior entre 4 inteiros
+  Escreva um programa que leia quatro números inteiros (podem ser negativos) e escreva na tela string "Maior: " seguida do maior deles. Se houver empate, escreva somente um deles.
+
+
+2. Divida a por b se for divisível:
+  Escreva um programa em C que leia dois números inteiros a e b. Em seguida, somente no caso de b dividir a, escreva na tela "Resultado: " e o resultado da divisão ba
+
+3. Verifica Triângulo
+  Um triângulo só é possível se cada lado não é maior que a soma dos outros dois.
+  Escreva um programa que recebe três números inteiros como os tamanhos dos três lados de um triângulo e verifica se estes tamanhos podem formar um triângulo. Se for possível formar um triângulo, o programa deve escrever "possivel". Caso contrário, deve escrever "impossivel".
+
+4. A melhor trilha
+  Escreva um programa em C que determine o nível da trilha (Iniciante, Intermediário ou Avançado) mais adequado para uma pessoa baseado em sua experiência e saúde física. Primeiro, o programa deve ler o número de trilhas que a pessoa já fez. A avaliação inicial é feita conforme o seguinte: 
+  0 <= T < 5 -> Iniciante, 
+  5 <= T < 20 -> #Vide Avaliação 1, 
+  T >= 20 -> #Vide Avaliação 2.
+  Se for necessária uma avaliação da saúde física, e somente neste caso, seu programa deve ler do usuário um valor lógico representando a saúde da pessoa (0 para Regular, 1 para Boa). As tabelas abaixo, denominadas avaliação #1 e avaliação #2, respectivamente, classificam a trilha recomendada baseada nessa avaliação.
+  Avaliação #1: 
+    Regular -> Iniciante, 
+    Boa -> Intermediário
+  Avaliação #2: 
+    Regular -> Intermediário, 
+    Boa -> Avançado
+

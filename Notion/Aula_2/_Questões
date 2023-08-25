@@ -1,0 +1,16 @@
+Questão 01: Complete o código para que o programa abaixo verifique se o número digitado pelo usuário satisfaz a uma das duas condições abaixo e imprimir V, caso satisfaça uma delas ou F caso não satisfaça nenhuma.
+  - numero é positivo, maior que 5 e menor que 80
+  - número é negativo, menor que -1 e maior que -10
+
+Questão 02: o código abaixo serve para identificar se um número é par ou impar. Apesar de compilar, o resultado está errado para alguns valores testados. Qual o problema do código?
+
+Questão 03: Escreva um programa em que o usuário informe a temperatura (em números reais) e a escala utilizada (Celsius, Farenheit ou Kelvin). A saída do programa será a temperatura nas 3 escalas.
+
+Considere que a escala vai ser fornecida como uma letra (char), da seguinte forma:
+  C = Temperatura em graus Celsius (°C)
+  F = Temperatura em graus Farenheit (°F)
+  K = Temperatura em graus Kelvin (K)
+
+A conversão entre as escalas pode ser feita com as seguintes equações:
+  K = C + 273,15
+  F = C * 1.8 + 32
