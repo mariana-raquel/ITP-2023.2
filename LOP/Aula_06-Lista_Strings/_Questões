@@ -1,0 +1,13 @@
+1. Iniciais maiúsculas
+  Escreva um programa que recebe frases de até 60 caracteres e apresenta como saída as letras iniciais de cada palavra em maiúsculas e as demais em minúsculas. Exemplo: Todo homem morre, mas nem todo homem vive. --> Todo Homem Morre, Mas Nem Todo Homem Vive.
+
+2. Métricas de um conjunto de textos
+  Escreva um programa que leia do usuário um conjunto de textos (com espaços incluso) e depois imprima as seguintes métricas dos textos lidos:
+    - O tamanho máximo entre os textos
+    - O tamanho mínimo entre os textos
+    - A média entre os tamanhos, com 2 casas decimais.
+    - Os textos com tamanho mais próximos da média (podem ser mais de um)
+  A entrada é composta por um valor N, que define a quantidade de textos a serem fornecidos, seguida por N textos, um por linha. Cada texto não pode ter mais de 200 caracteres. Os textos podem ter espaços, como "Sao Paulo". Uma sugestão de implementação é usar o valor de N para declarar um vetor de strings que pode ser usado para armazenar os textos para processamento posterior.
+
+3. Contador e localizador de substrings
+  Escreva um programa que recebe duas strings de até 40 caracteres, A e B, e informa quantas vezes A aparece dentro de B. O programa deve ignorar diferenças de maiúsculas e minúsculas e deve apontar as posições onde cada repetição inicia.

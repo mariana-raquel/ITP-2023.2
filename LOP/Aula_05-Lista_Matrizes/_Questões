@@ -1,0 +1,76 @@
+1. [ITP] Ataque dos Clones
+  Após a ordem 66, os Jedis passaram a ser caçados impiedosamente pelo exército de Clones da República galática, agora sob o comando do Império Sith. Àqueles que não sucumbiram no ataque inicial, fugiram para locais isolados do universo, em busca de abrigo e aguardando um momento oportuno para um contra ataque.
+  Para tentar auxiliar os Jedis, a Aliança Rebelde faz buscas em planetas atacados pelos Clones, na esperança de encontrar sobreviventes. Como os Jedis são adversários formidáveis, os Clones bombardearam os planetas com ogivas radioativas, na esperança de eliminar os cavaleiros da força à distância. Após os ataques, a comunicação com o planeta é cortada, porém os Rebeldes conhecem a última posição onde cada Jedi estava escondido.
+  Seu programa deverá fazer uma leitura de um mapa de radiação do planeta, definido por dois valores inteiros N e M, o tamanho N x M do mapa. Em seguida, ele lerá dois valores inteiros, as últimas coordenadas conhecidas do Jedi que estava escondido no planeta. Essas coordenadas são respectivamente a linha (de 1 até N) e a coluna (de 1 até M) do ponto no mapa.
+  A partir daí, seu programa deve ler N x M valores inteiros, representando os índices de radiação de um planeta. Os locais onde as bombas de ataque foram lançados apresentam picos de radiação, ou seja, o valor de radiação é mais alto do que todos os locais ao redor. Veja esse exemplo de um mapa 3x3:
+  2 3 3
+  1 8 4
+  3 1 2
+  Podemos ver que houve um ataque na 2° linha e na 2º coluna do mapa, onde o valor é 8, porque é maior do que todos os oito valores em volta. Todo mapa possui pelo menos uma bomba, e não há bombas em posições adjacentes, porque o império é poderoso mas precisa economizar no arsenal.
+  Seu programa deverá identificar no mapa e imprimir os locais onde as bombas caíram, e uma mensagem "Descanse na força..." quando o Jedi for atingido por uma bomba, e "Ao resgate!" quando ele sobreviver aos ataques. Observe os exemplos de entrada e saída para ver o formato correto para impressão dos resultados.
+
+
+2. [ITP] Batalha Naval
+  Um clássico dos jogos de tabuleiro e digitais, a Batalha naval consiste em dois tabuleiros 10 x 10, um para cada jogador. Cada um dos jogadores irá posicionar seu conjunto de barcos de forma que o outro não veja, e então eles devem alternar turnos tentando adivinhar onde o oponente colocou os barcos. Se o adversário errar, o jogador grita "Água!", e se acertar o jogador informa que o tiro foi bem sucedido.
+  Os barcos possuem tamanhos distintos, indo de 2 a 5, ou 1 a 4 dependendo da versão do jogo. Um barco de 4 partes só afunda quando as 4 são atingidas pelo jogador. Vence a partida quem afundar todos os barcos do adversário primeiro.
+  Mas calma jovem! Nesse exercício você não vai precisar implementar o jogo de batalha naval. Apenas uma parte :P
+  Faça um programa que leia a posição, representada por valores inteiros de 0 a 9, de quatro barcos de tamanhos distintos, na seguinte ordem:
+    Canoa - 1 posição
+    Barco - 2 posições
+    Fragata - 3 posições
+    Destróier - 4 posições
+  Em seguida, imprima um mapa de batalha naval (10x10), com as seguintes características:
+    ~ - água
+    * - canoa
+    < OU > - Pontas dos barcos com 2 ou mais posições
+    | - corpo de barco na vertical (3 ou mais posições)
+    = - corpo de barco na horizontal (3 ou mais posições).
+  Verifique os exemplos de entrada e saída para entender o formato de impressão desejado.
+
+
+3. [ITP] Experimento em Marte
+  Com o avanço da exploração do planeta Marte por vários países, os governos mundiais começam a ficar mais ousados em relação aos experimentos que desejam executar. Após analisar várias condições do planeta, tentando não contaminar o estado natural com elementos de vida da Terra (o que praticamente impossível), chegou a hora de passar para uma nova etapa: verificar se é possível reproduzir condições similares ao que temos no nosso planeta a partir de terraformação.
+  Um primeiro passo que os cientistas querem descobrir é a possibilidade de reproduzir biomas existentes no nosso planeta em Marte. Para isso, eles querem iniciar com testes simples: se existe a possibilidade de crescer um determinado tipo de planta em alguma região do planeta. Para isso, os cientistas inventaram uma fórmula que leva em conta 300 variáveis para definir um índice de sobrevivência da planta baseada em diversos elementos do terreno: composição mineral, temperatura da região, ventos, etc.... Os cientistas também definiram que para a planta ser considerada um sucesso, é necessário que ela ocupe uma área de tamanho 3x3 na superfície do planeta, logo seria necessária que o valor das variáveis espalhadas por essa área totalizassem um valor igual ou o mais próximo possível desse índice de sobrevivência (dado que uma área pode compensar recursos que outra área não tem, e as duas juntas sustentarem a planta).
+  Agora você precisa ajudar a humanidade em seu esforço de colonização interplanetária, e fazer um programa que determina a melhor área do planeta para o drone plantar as sementes da planta.
+  Seu programa vai receber como entrada os seguintes valores: as dimensões da área investigada N x M, indicando um mapa retangular com N linhas e M colunas, mapeando uma área da superfície. Seu programa também receberá um valor S, indicando o índice de sobrevivência da planta.
+  Em seguida, seu programa receberá N x M valores, indicando as notas de cada uma das áreas do planeta em função das variáveis similares as que foram utilizadas para calcular o índice S da planta. Seu programa deve então procurar uma região 3x3 no mapa onde a soma dos valores obtidos seja a mais próxima possível do índice S da planta, de forma que ela tenha mais chances de sobreviver. Caso duas regiões tenham o mesmo valor, escolha a primeira que for encontrada.
+  Por exemplo, imagine que a entrada do seu programa é
+    4 4 10
+  Ou seja, um mapa 4x4, e o índice de sobrevivência da planta é 10.
+  E os seguintes valores mapeiam os recursos do terreno:
+    1 1 1 3
+    1 1 1 1
+    1 1 1 2
+    5 1 1 1
+  A imagem do link mostra as possíveis áreas 3x3 com seus valores (constituídos pela soma dos recursos de cada um dos espaços da área).
+  Imagem: Exmplo das áreas
+  Como vocês podem ver na imagem, a melhor área para mandar as sementes da planta é a quarta área, que inicia na posição 2, 2 e possui valor de 10, porque é a mais próxima do valor de sobrevivência 10 da planta (igual na verdade!).
+  A saída do seu programa vai ser um texto no seguinte formato:
+  A melhor area para exploracao eh X Y com valor M, onde X e Y são as posições da linha e coluna iniciais da área que possui o valor mais próximo do índice de sobrevivência da planta, e M é a diferença desse valor para o valor do índice de sobrevivência.
+  Para o exemplo acima, a saída do seu programa seria:
+    A melhor area para exploracao eh 2 2 com valor 0
+
+
+4. Pirâmide alternativa
+  Depois que você trabalhou na equipe de desenvolvimento do próximo Assassin's Creed, gerando pirâmides do Egito, uma nova equipe te contratou para trabalhar em um jogo similar, com estruturas similares a pirâmides... mas diferentes. A nova estrutura cresce em blocos e tem base quadrada, como as pirâmides, mas ao invés de crescer em camadas quadradas, cada camada é um losango.
+  Por exemplo, numa pirâmide que tem 3 blocos de largura, teremos 3 camadas. A primeira (a base da estrutura) será quadrada e terá altura de um único bloco. A segunda camada terá altura de dois blocos e será um losango. Por fim, a última terá altura de 3 blocos (bem no centro), como ilustrado a seguir:
+    1 2 1
+    2 3 2
+    1 2 1
+  Para uma pirâmide com 4 blocos de largura, teremos também 3 camadas, com a seguinte estrutura:
+    1 2 2 1
+    2 3 3 2
+    2 3 3 2
+    1 2 2 1
+  Para uma pirâmide com 5 blocos de largura, teremos a seguinte estrutura:
+    1 2 3 2 1
+    2 3 4 3 2
+    3 4 5 4 3
+    2 3 4 3 2
+    1 2 3 2 1
+...e assim por diante.
+  Escreva então um programa que crie uma matriz quadrada com as alturas (número de blocos) dessa nova estrutura, dada sua a largura.
+  Entrada: 
+    Seu programa deve ser um único valor inteiro N representando a quantidade de blocos da largura da estrutura. 
+  Saída:
+    Considerando que a estrutura possui uma base quadrada (largura e profundidade são iguais), seu programa deve enviar para a saída-padrão uma matriz com a altura de cada uma de suas posições.

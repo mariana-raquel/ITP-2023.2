@@ -1,0 +1,27 @@
+1. [ITP] Médias e erro
+  As médias são utilizadas quando temos um conjunto de dados e queremos estimar um valor que represente esses dados. A média pode ser entendida como um valor central de determinados dados. Entre com 10 números e calcule as média aritmética, geométrica e harmônica, no link temos as formulas matemáticas necessárias para o calculo, nesse link pode ser visto o uso de uma função necessária para calcular as médias. Ao final calcule e imprima o erro médio (entre as médias geométricas e harmônicas) em relação a média aritmética.
+Para o calculo dos erros use as funções abaixo:
+  Erro_harmônica= (média harmônica - média aritmética) / média aritmética
+  Erro_geométrica= (média geométrica- média aritmética) / média aritmética
+  Erro_médio= (Erro_harmônica + Erro_geométrica)/2​
+
+2. Somas em Orçamentos (Atletismo)
+
+  Você foi contratado pela Confederação Brasileira de Atletismo para auxiliar nos processos administrativos da confederação. Uma das suas primeiras tarefas é desenvolver um programa para facilitar o desenvolvimento de orçamentos para compra de equipamentos e materiais para as competições.
+  Mais especificamente, você deve desenvolver um programa que recebe como entrada a descrição dos diferentes itens do orçamento de modo que cada item é descrito por dois valores: sua quantidade e seu valor unitário. Como os orçamentos possuem várias páginas, a quantidade total de itens não é conhecida previamente. Assim, o programa receberá uma quantidade indeterminada de itens até que o valor -1 seja apresentado.
+  O programa deve apresentar como saída a quantidade total de elementos, uma vez que cada item pode apresentar mais de uma unidade, e em seguida o valor total do orçamento (considerando duas casas decimais).
+Observe o formato da entrada e saída padrão para ver como esses dados serão inseridos no programa.
+
+3. Número palíndromo, par ou impar
+  Palíndromo é uma palavra, frase ou número que permanece igual quando lida de trás para diante. Por extensão, palíndromo é qualquer série de elementos com simetria linear, ou seja, que apresenta a mesma sequência de unidades nos dois sentidos. Escreva um programa em C para verificar se um número é palíndromo ou não. 
+Após a verificação veja se é par ou impar
+Exemplo: 
+  4224 é palíndromo e par.
+  32123 é palíndromo e impar.
+
+4. Índices (Atletismo)
+  Uma das atribuições da Confederação Brasileira de Atletismo consiste em atribuir a índice (marca mínima) que os atletas devem atingir numa prova para que possam participar em competições importantes.
+  Você deve desenvolver um programa para determinar o índice da prova de salto em distância calculado como a média das melhores marcas dos últimos N anos. Observe que por diversas razões, a competição pode não ter sido realizada em um ou mais anos, nesse caso, esses anos não devem ser incluídos no cálculo da média. Por exemplo, não foram realizadas competições no ano de 2020 devido à pandemia do COVID-19. Além disso, podem ser criadas novas competições de modo que não existem dados históricos para determinar o índice.
+  O programa deve receber como entrada o valor N indicando a quantidade de anos a ser considerado para o cálculo da média. Em seguida, o programa deve receber N valores correspondentes a distância em metros da marca vencedora de cada ano. Os anos sem registro são indicados pelo valor -1, pois distâncias não podem assumir valores negativos, e não devem ser considerados no cálculo da média. Por exemplo, se forem considerados os dados dos três últimos anos como <7, -1, 7>, então a média será calculada considerando somente os dois valores, isto é, (7+7)/2.
+  O programa deve apresentar como resultado o índice da competição considerando duas casas decimais. Caso a competição não possua dados históricos, deve ser exibida a seguinte mensagem: "A competicao nao possui dados historicos!".
+  Observe o formato da entrada e saída padrão para ver como esses dados serão inseridos no programa.

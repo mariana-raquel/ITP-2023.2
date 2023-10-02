@@ -1,0 +1,32 @@
+1. Imprimir elementos de um vetor sem repetições
+  Implemente um programa que leia do usuário o tamanho e os valores que compõem um vetor de números inteiros. O seu programa deve imprimir cada valor do vetor sem repetições. Observe que a ordem em que os valores são impressos é a mesma ordem em que eles ocorrem no vetor original.
+
+2. Separar números em três vetores
+  Escreva um programa que leia da entrada-padrão 15 números inteiros positivos e os armazena em um vetor A. Depois separe os números em três vetores:
+  Vetor B dos números que são múltiplos de 2.
+  Vetor C dos números que são múltiplos de 3.
+  Vetor D dos números que não são múltiplos nem de 2 e nem de 3
+
+3. Corretor automático para provas objetivas (R01)
+  O MEC precisa de sua ajuda para automatizar a correção das provas objetivas do ENEM! Escreva um programa que leia um número inteiro n representando o número de questões (1 ≤ n ≤ 20). Em seguida leia as n respostas do gabarito e, em seguida, as n respostas do aluno. Assuma que as respostas estão sempre entre 1 e 5. Depois o programa deve escrever na tela quantas questões o aluno acertou e a string “acertos” ou “acerto” (para 1 acerto), conforme exemplo abaixo.
+
+4. Permutação (R05)
+  Escreva um programa em c que leia um número inteiro n (assuma 1 ≤ n ≤ 10) e, em seguida, n números inteiros (não necessariamente estão entre 1 e n). O programa deve escrever “sim” se esses n números são uma permutação dos números entre 1 e n e “não” caso contrário. por exemplo, se n = 5, então [1 3 4 2 5] e [5 2 3 1 4] são permutações de [1 2 3 4 5], enquanto não são: [1 6 4 3 2] (pois falta o 5) e [1 2 5 3 3] (pois falta o 4).
+
+5. Cheque esperto (R06)
+  Cheque esperto é um famoso pirata que sempre pede ajuda aos alunos de ITP para encontrar tesouros. Em seu mapa há 10 ilhas numeradas de 0 a 9. Ele não sabe em qual dessas ilha está o tesouro. Quando ele visita a ilha x, os nativos afirmam que o tesouro está na ilha v[x]. Ele pediu sua ajuda para determinar a primeira ilha que, partindo da ilha 0, será visitada uma segunda vez se for seguindo a sugestão dos nativos. Ele acredita que lá deva estar o tesouro.
+  A imagem a seguir ilustra o exemplo para o vetor: [8, 4, 3, 0, 7, 4, 2, 1, 5, 2]. Por exemplo, os nativos da ilha 0 afirmam que o tesouro está na ilha 8 (valor que está em v[0]), os nativos da ilha 8 afirmam que o tesouro está na ilha 5 (valor que está em v[8]) e os nativos da ilha 5 afirmam que o tesouro está na ilha 4 (valor que está em v[5]). Nesse exemplo, Cheque esperto visita as ilhas na sequência: 0 → 8 → 5 → 4 → 7 → 1 → 4. Como a ilha 4 é a primeira ilha a ser visitada uma segunda, 4 deve ser a resposta.
+  A entrada do programa consiste na sugestão dos nativos em cada uma das 10 ilhas, desde a ilha 0 até a ilha 9. A saída do seu programa deve ser a primeira ilha que será visitada uma segunda vez. Garante-se que a entrada é tal que há solução.
+
+6. Chove chuva (R02)
+  Escreva um programa que leia um número inteiro n representando uma quantidade de meses (1 ≤ n ≤ 20). Em seguida faça a leitura de n inteiros, representando a quantidade de dias que choveu em cada um desses meses (do mês 1 até o mês n). O programa deve em seguida escrever na tela o número do mês em que mais teve dias de chuva (se houver empate entre mais de um mês, escreva-os todos em ordem crescente) e a respectiva quantidade. Assuma que choveu em pelo menos algum dia.
+
+7. Comprimento da Ponte (R03)
+  A prefeitura está pedindo sua ajuda para determinar o comprimento de uma ponte que será construída. A ponte será construída nos dois pontos mais altos da região. Os dois pontos mais altos são sempre iguais, então não deve haver uma ponte inclinada. Escreva um programa que leia um número n (assuma n ≤ 30), em seguida n números inteiros (todos maiores que 0) representando a altura do terreno (vide Figuras a seguir). O programa deve escrever na tela o comprimento da ponte que une os dois pontos mais altos. Assuma que há sempre duas, e somente duas, ocorrências do ponto mais alto e que o comprimento da ponte é no mínimo 1.
+  Entrada da primeira figura: 10 2 5 3 2 2 3 5 3 2 1 (saída 4)
+  Entrada da segunda figura: 10 4 5 3 5 5 6 5 3 6 4 (saída 2)
+  Entrada da terceira figura: 20 1 2 4 6 1 2 3 3 3 3 4 4 5 4 3 2 3 6 4 2 (saída 13)
+
+8. Páginas ausentes (R04)
+  Um museu está precisando digitalizar alguns livros antigos e precisa de um programa que informe facilmente quais páginas estão faltando. Escreva um programa que faça a leitura da quantidade m (m ≤ 1000) de páginas do livro original (numeradas de 1 a m) , a quantidade n (n ≤ m) de páginas digitalizadas e, em seguida, o número das n páginas que foram digitalizadas (não necessariamente em ordem crescente). O seu programa deve escrever na tela quais as páginas que estão faltando, em ordem crescente.
+  Por exemplo, considere a entrada 13 6 2 5 13 8 11 7. Nesse caso, temos m = 13, n = 6 e as seguintes 6 páginas digitalizadas: 2 5 13 8 11 7. As páginas que faltam e devem ser escritas na tela, nessa ordem, são: 1 3 4 6 9 10 12

@@ -1,0 +1,19 @@
+Questão 01: Os membros da associação Professores Também são Peladeiros (PTP) estão procurando novos talentos para atuarem na sua liga de futebol que ocorre todos os finais de semana onde o solstício de verão coincide com um número primo.
+  Para isso, eles decidiram escrever um programa que lerá várias partidas de um jogador e verificará as partidas que ele fez gol ou não. Os membros da PTP são exigentes, então eles só querem jogadores que marcaram gols em todas as partidas.
+  Seu programa lerá um valor N (1<=N<=100) indicando o número de partidas de um jogador que que serão verificadas. Cada partida é descrita na seguinte forma:
+  Número de gols do time do jogador x Número de  gols do adversário (Gols marcados pelo jogador)
+  Seu programa deve imprimir Artilheiro se o jogador marcou gols em todas as partidas, ou perna de pau caso contrário.
+
+Questão 02: Por lei, na Nlogônia todas as barras de chocolate são quadradas. Anamaria tem uma barra quadrada de chocolate de lado L, que ela quer compartilhar com alguns colegas. Mas ela é uma boa cidadã e cumpre a lei.
+  Então, ela divide a barra em quatro pedaços quadrados, de lado L=L/2. Depois, ela repete esse procedimento com cada pedaço gerado, sucessivamente, enquanto o lado for maior do que, ou igual a 2cm. Você deve escrever um programa que, dado o lado L da barra inicial, em centímetros, determina quantos pedaços haverá ao final do processo.
+  A entrada consiste de uma linha, com um único inteiro, L, o número de centímetros do lado do quadrado.
+  Se programa deve imprimir uma única linha, contendo um único inteiro, igual ao número total de pedaços obtidos pela Anamaria.
+
+Questão 03: A cantina do IMD está com um problemão! Um grupo de professores começou a pendurar suas contas, e o proprietário está preocupado que um deles tente dar um calote. Para evitar que isso aconteça, ele pediu que os alunos de ITP preparassem secretamente um programa para que ele pudesse acompanhar a conta de cada um dos professores.
+  Os professores que estão sob observação são André (A), Kayo (K), Isaac (I), Daniel (D) e Girão (G). Cada professor será identificado com a letra associada no parêntese. Os itens vendidos na cantina estão detalhados na tabela abaixo:
+    Mc Cilada - 1 - 3,50
+    Suco de pitomba - 2 - 1,50
+    Açaí batido no bacon - 3 - 6,00
+    Gororoba - 4 - 10,00
+O seu programa deverá ler várias entradas. Cada entrada conterá uma letra e dois inteiro (A 1 2, por exemplo), informando o professor, o item comprado e a quantidade. Logo A 1 2 indica que o professor André comprou 2 Mc-Ciladas. O seu programa deverá terminar quando ler uma linha igual a F 0 0, indicando o fim das entradas.
+  Após ler os dados, seu programa deve calcular a conta que cada professor deverá pagar! A sua saída deve ser um relatório no formato: Nome_do_professor deve X reais, onde X é o valor consumido pelo professor.
